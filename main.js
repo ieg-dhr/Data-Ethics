@@ -8,14 +8,14 @@ jQuery(document).ready(function($) {
 });
 
 // Logo hide while scrolling the page and show at the beginning of the page
-function navScroll() {
-    $(window).scroll(function() {
-        $(".navbar-brand > img").hide();
-        if ($(window).scrollTop() < 50) {
-            $(".navbar-brand > img").show();
-        }
-    })
-}
+//function navScroll() {
+//    $(window).scroll(function() {
+//        $(".navbar-brand > img").hide();
+//        if ($(window).scrollTop() < 50) {
+//            $(".navbar-brand > img").show();
+//        }
+//    })
+//}
 
 // Dynamic active class on navbar items while scrolling the page ...I can do better, so do you!
 function activeMove() {
