@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    navScroll();
+    // navScroll();
     activeMove();
     navItems();
     scopriDiPiu();
