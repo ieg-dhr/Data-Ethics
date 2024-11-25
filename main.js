@@ -62,7 +62,7 @@ function activeMove() {
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
-        if (windowPos > heightProceedings) {
+        if (windowPos > heightVenue) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
@@ -70,7 +70,7 @@ function activeMove() {
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
-        if (windowPos > heightContacts) {
+        if (windowPos > heightProceedings) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
