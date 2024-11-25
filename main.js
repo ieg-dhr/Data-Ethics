@@ -23,8 +23,9 @@ function activeMove() {
     var heightAbout = $("#about").offset().top;
     var heightCfp = $("#cfp").offset().top;
     var heightSubmission = $("#submission").offset().top;
+    var heightVenue = $("#venue").offset().top;
     var heightProceedings = $("#proceedings").offset().top;
-    var heightContacts = $("#contacts").offset().top;
+    var heightContact = $("#contact").offset().top;
     $(window).scroll(function() {
         var windowPos = window.pageYOffset;
         if (windowPos > heightHome) {
@@ -32,44 +33,50 @@ function activeMove() {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
+            $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
-            $(".contacts-li").removeClass("active");
+            $(".contact-li").removeClass("active");
         } 
         if (windowPos > heightAbout) {
             $(".home-li").removeClass("active");
             $(".about-li").addClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
+            $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
-            $(".contacts-li").removeClass("active");
+            $(".contact-li").removeClass("active");
         } 
         if (windowPos > heightCfp) {
             $(".about-li").removeClass("active");
             $(".cfp-li").addClass("active");
             $(".submission-li").removeClass("active");
+            $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
-            $(".contacts-li").removeClass("active");
+            $(".contact-li").removeClass("active");
         }
         if (windowPos > heightSubmission) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").addClass("active");
+            $(".venue-li").addClass("active");
             $(".proceedings-li").removeClass("active");
-            $(".contacts-li").removeClass("active");
+            $(".contact-li").removeClass("active");
         }
         if (windowPos > heightProceedings) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
+            $(".venue-li").removeClass("active");
             $(".proceedings-li").addClass("active");
-            $(".contacts-li").removeClass("active");
+            $(".contact-li").removeClass("active");
         }
         if (windowPos > heightContacts) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
+            $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
-            $(".contacts-li").addClass("active");
+            $(".contact-li").addClass("active");
         }
     })
 }
