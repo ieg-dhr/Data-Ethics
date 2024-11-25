@@ -58,11 +58,19 @@ function activeMove() {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").addClass("active");
-            $(".venue-li").addClass("active");
+            $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
         if (windowPos > heightProceedings) {
+            $(".about-li").removeClass("active");
+            $(".cfp-li").removeClass("active");
+            $(".submission-li").removeClass("active");
+            $(".venue-li").addClass("active");
+            $(".proceedings-li").removeClass("active");
+            $(".contact-li").removeClass("active");
+        }
+        if (windowPos > heightContacts) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
