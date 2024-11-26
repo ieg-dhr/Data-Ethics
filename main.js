@@ -78,7 +78,7 @@ function activeMove() {
             $(".proceedings-li").addClass("active");
             $(".contact-li").removeClass("active");
         }
-        if (windowPos > heightContacts) {
+        if (windowPos > heightContact) {
             $(".about-li").removeClass("active");
             $(".cfp-li").removeClass("active");
             $(".submission-li").removeClass("active");
