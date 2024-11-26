@@ -1,4 +1,4 @@
-# Data_Ethics
+# Data-Ethics
 Repository for the Data Ethics conference.
 
 
