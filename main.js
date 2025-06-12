@@ -21,8 +21,9 @@ jQuery(document).ready(function($) {
 function activeMove() {
     var heightHome = $("#home").offset().top;
     var heightAbout = $("#about").offset().top;
-    var heightCfp = $("#cfp").offset().top;
-    var heightSubmission = $("#submission").offset().top;
+    var heightProgram = $("#program").offset().top;
+    // var heightKeynote = $("#keynote").offset().top;
+    var heightRegistration = $("#registration").offset().top;
     var heightVenue = $("#venue").offset().top;
     var heightProceedings = $("#proceedings").offset().top;
     var heightContact = $("#contact").offset().top;
@@ -31,8 +32,9 @@ function activeMove() {
         if (windowPos > heightHome) {
             $(".home-li").addClass("active");
             $(".about-li").removeClass("active");
-            $(".cfp-li").removeClass("active");
-            $(".submission-li").removeClass("active");
+            $(".program-li").removeClass("active");
+          //  $(".keynote-li").removeClass("active");
+            $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
@@ -40,48 +42,63 @@ function activeMove() {
         if (windowPos > heightAbout) {
             $(".home-li").removeClass("active");
             $(".about-li").addClass("active");
-            $(".cfp-li").removeClass("active");
-            $(".submission-li").removeClass("active");
+            $(".program-li").removeClass("active");
+        //    $(".keynote-li").removeClass("active");
+            $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         } 
-        if (windowPos > heightCfp) {
+        if (windowPos > heightProgram) {
             $(".about-li").removeClass("active");
-            $(".cfp-li").addClass("active");
-            $(".submission-li").removeClass("active");
+            $(".program-li").addClass("active");
+          //  $(".keynote-li").removeClass("active");
+            $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
-        if (windowPos > heightSubmission) {
+      //  if (windowPos > heightKeynote) {
+      //      $(".about-li").removeClass("active");
+      //      $(".program-li").removeClass("active");
+      //      $(".keynote-li").addClass("active");
+      //      $(".registration-li").removeClass("active");
+      //      $(".venue-li").removeClass("active");
+       //     $(".proceedings-li").removeClass("active");
+       //     $(".contact-li").removeClass("active");
+      //  }
+        if (windowPos > heightRegistration) {
             $(".about-li").removeClass("active");
-            $(".cfp-li").removeClass("active");
-            $(".submission-li").addClass("active");
+            $(".program-li").removeClass("active");
+         //   $(".keynote-li").removeClass("active");
+            $(".registration-li").addClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
         if (windowPos > heightVenue) {
             $(".about-li").removeClass("active");
-            $(".cfp-li").removeClass("active");
-            $(".submission-li").removeClass("active");
+            $(".program-li").removeClass("active");
+         //   $(".keynote-li").removeClass("active");
+            $(".registration-li").removeClass("active");
             $(".venue-li").addClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
         if (windowPos > heightProceedings) {
             $(".about-li").removeClass("active");
-            $(".cfp-li").removeClass("active");
-            $(".submission-li").removeClass("active");
+            $(".program-li").removeClass("active");
+         //   $(".keynote-li").removeClass("active");
+            $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").addClass("active");
             $(".contact-li").removeClass("active");
         }
         if (windowPos > heightContact) {
             $(".about-li").removeClass("active");
-            $(".cfp-li").removeClass("active");
-            $(".submission-li").removeClass("active");
+            $(".program-li").removeClass("active");
+         //   $(".keynote-li").removeClass("active");
+            $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").addClass("active");
@@ -117,14 +134,26 @@ function seeDayProgram() {
     $("#1st-program").click(function() {
         $(".1st-day-program").show();
         $(".2nd-day-program").hide();
+        $(".3rd-day-program").hide();
         $("#1st-program").removeClass("button-round-empty-dimgray").addClass("button-round-dimgray");
         $("#2nd-program").removeClass("button-round-dimgray").addClass("button-round-empty-dimgray");
+        $("#3rd-program").removeClass("button-round-dimgray").addClass("button-round-empty-dimgray");
     })
     $("#2nd-program").click(function() {
         $(".1st-day-program").hide();
         $(".2nd-day-program").show();
+        $(".3rd-day-program").hide();
         $("#1st-program").removeClass("button-round-dimgray").addClass("button-round-empty-dimgray");
         $("#2nd-program").removeClass("button-round-empty-dimgray").addClass("button-round-dimgray");
+        $("#3rd-program").removeClass("button-round-dimgray").addClass("button-round-empty-dimgray");
+    })
+    $("#3rd-program").click(function() {
+        $(".1st-day-program").hide();
+        $(".2nd-day-program").hide();
+        $(".3rd-day-program").show();
+        $("#1st-program").removeClass("button-round-dimgray").addClass("button-round-empty-dimgray");
+        $("#2nd-program").removeClass("button-round-dimgray").addClass("button-round-empty-dimgray");
+        $("#3rd-program").removeClass("button-round-empty-dimgray").addClass("button-round-dimgray");
     })
 }
 

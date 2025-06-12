@@ -82,6 +82,7 @@ body {background-color: #FEFEFE; font: 16px Raleway, sans-serif; -webkit-font-sm
 @media only screen and (max-width: 767px) {.secondary-title {font-size: 25px;}}
 @media only screen and (max-height: 415px) {.secondary-title {font-size: 15px;}}
 .thumbnail-title {font: 20px Raleway, sans-serif; font-weight: 600; letter-spacing: 2px;}
+.program-title {font: 25px Raleway, sans-serif; letter-spacing: 2px; text-align: center; text-transform: uppercase; line-height: 25px; color: #343434;}
 
 /* Paragraphs */ 
 .pre-footer-p {font: 17px Raleway, sans-serif; letter-spacing: 0.6; line-height: 1.6; text-align: center;}
@@ -123,12 +124,16 @@ body {background-color: #FEFEFE; font: 16px Raleway, sans-serif; -webkit-font-sm
 .thumbnail .caption {padding: 3vh !important;}
 @media only screen and (max-width: 1024px) {.thumbnail-title {margin-top: 20px !important;}}
 
+.circle-keynote {background-color: #bbb; border-radius: 70%; display: block; height: 40vh; margin: 20px auto; width: 40vh;}
+@media only screen and (max-width: 1024px) {.circle-keynote {background-color: #bbb; border-radius: 70%; display: block; height: 15vh; margin: 20px auto; width: 15vh;}}
+.circle-keynote:hover {box-shadow: 0px 2px 30px -1px rgba(52,52,52,0.4);}
+
 /* Img cards - Insert the images of your relators here as background-image */
 .no-user {background-image: url("img/user.png"); background-size: cover; background-repeat: no-repeat;}
 .constanze {background-image: url("img/constanze.jpg"); background-size: cover; background-repeat: no-repeat;}
 .sofia {background-image: url("img/sofia.jpg"); background-size: cover; background-repeat: no-repeat;}
 .elena {background-image: url("img/Elena.jpeg"); background-size: cover; background-repeat: no-repeat;}
-
+.keynote {background-image: url("img/herlt-kerstin.jpg"); background-size: cover; background-repeat: no-repeat;}
 
 /* Icone */
 .fa-copy:hover {color: #FEFEFE; font-size: 20px;}
