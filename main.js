@@ -22,7 +22,7 @@ function activeMove() {
     var heightHome = $("#home").offset().top;
     var heightAbout = $("#about").offset().top;
     var heightProgram = $("#program").offset().top;
-    // var heightKeynote = $("#keynote").offset().top;
+    var heightKeynote = $("#keynote").offset().top;
     var heightRegistration = $("#registration").offset().top;
     var heightVenue = $("#venue").offset().top;
     var heightProceedings = $("#proceedings").offset().top;
@@ -33,7 +33,7 @@ function activeMove() {
             $(".home-li").addClass("active");
             $(".about-li").removeClass("active");
             $(".program-li").removeClass("active");
-          //  $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
@@ -43,7 +43,7 @@ function activeMove() {
             $(".home-li").removeClass("active");
             $(".about-li").addClass("active");
             $(".program-li").removeClass("active");
-        //    $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
@@ -52,25 +52,25 @@ function activeMove() {
         if (windowPos > heightProgram) {
             $(".about-li").removeClass("active");
             $(".program-li").addClass("active");
-          //  $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
             $(".contact-li").removeClass("active");
         }
-      //  if (windowPos > heightKeynote) {
-      //      $(".about-li").removeClass("active");
-      //      $(".program-li").removeClass("active");
-      //      $(".keynote-li").addClass("active");
-      //      $(".registration-li").removeClass("active");
-      //      $(".venue-li").removeClass("active");
-       //     $(".proceedings-li").removeClass("active");
-       //     $(".contact-li").removeClass("active");
-      //  }
+        if (windowPos > heightKeynote) {
+            $(".about-li").removeClass("active");
+            $(".program-li").removeClass("active");
+            $(".keynote-li").addClass("active");
+            $(".registration-li").removeClass("active");
+            $(".venue-li").removeClass("active");
+            $(".proceedings-li").removeClass("active");
+            $(".contact-li").removeClass("active");
+        }
         if (windowPos > heightRegistration) {
             $(".about-li").removeClass("active");
             $(".program-li").removeClass("active");
-         //   $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").addClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
@@ -79,7 +79,7 @@ function activeMove() {
         if (windowPos > heightVenue) {
             $(".about-li").removeClass("active");
             $(".program-li").removeClass("active");
-         //   $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").removeClass("active");
             $(".venue-li").addClass("active");
             $(".proceedings-li").removeClass("active");
@@ -88,7 +88,7 @@ function activeMove() {
         if (windowPos > heightProceedings) {
             $(".about-li").removeClass("active");
             $(".program-li").removeClass("active");
-         //   $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").addClass("active");
@@ -97,7 +97,7 @@ function activeMove() {
         if (windowPos > heightContact) {
             $(".about-li").removeClass("active");
             $(".program-li").removeClass("active");
-         //   $(".keynote-li").removeClass("active");
+            $(".keynote-li").removeClass("active");
             $(".registration-li").removeClass("active");
             $(".venue-li").removeClass("active");
             $(".proceedings-li").removeClass("active");
