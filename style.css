@@ -108,13 +108,13 @@ body {background-color: #FEFEFE; font: 16px Raleway, sans-serif; -webkit-font-sm
 .hr-secondary {border: 4px solid; width: 40%;}
 
 /* Button */
-.button-round {background-color: #8e1c3f; border: 1px solid #8e1c3f; border-radius: 37px; color: #fff; font: 16px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
-.button-round:hover {background-color: transparent; border: 1px solid #8e1c3f; border-radius: 37px; color: #8e1c3f; font: 16px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
-.button-round-empty {background-color: transparent; border: 1px solid #8e1c3f; border-radius: 37px; color: #8e1c3f; font: 16px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
-.button-round-dimgray {background-color: #3A515F; border: 1px solid #3A515F; border-radius: 37px; color: #fff; font: 16px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
-.button-round-empty-dimgray {background-color: transparent; border: 1px solid #3A515F; border-radius: 37px; color: #3A515F; font: 16px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
-.button-round-white {background-color: #FEFEFE; border: 1px solid #FEFEFE; border-radius: 37px; color: #3A515F; font: 20px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
-.button-round-white:hover {background-color: #3A515F; border: 1px solid #FEFEFE; border-radius: 37px; color: #FEFEFE; font: 20px Raleway, sans-serif; margin: 10px 0 14px; padding: 13.6px 16px;}
+.button-round {background-color: #8e1c3f; border: 1px solid #8e1c3f; border-radius: 37px; color: #fff; font: 16px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
+.button-round:hover {background-color: transparent; border: 1px solid #8e1c3f; border-radius: 37px; color: #8e1c3f; font: 16px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
+.button-round-empty {background-color: transparent; border: 1px solid #8e1c3f; border-radius: 37px; color: #8e1c3f; font: 16px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
+.button-round-dimgray {background-color: #3A515F; border: 1px solid #3A515F; border-radius: 37px; color: #fff; font: 16px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
+.button-round-empty-dimgray {background-color: transparent; border: 1px solid #3A515F; border-radius: 37px; color: #3A515F; font: 16px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
+.button-round-white {background-color: #FEFEFE; border: 1px solid #FEFEFE; border-radius: 37px; color: #3A515F; font: 20px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
+.button-round-white:hover {background-color: #3A515F; border: 1px solid #FEFEFE; border-radius: 37px; color: #FEFEFE; font: 20px Raleway, sans-serif; margin: 15px 0 14px; padding: 13.6px 16px;}
 
 /* Cards */
 .circle {background-color: #bbb; border-radius: 50%; display: block; height: 30vh; margin: 20px auto; width: 30vh;}
